@@ -19,6 +19,15 @@ const dataSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  type: {
+    type: String,
+    enum: ['Full-Stack', 'Back-End', 'Front-End'],
+    required: true,
+  },
+  colaboration: {
+    type: Boolean,
+    required: true,
+  },
   techs: {
     type: Array,
     required: true,
